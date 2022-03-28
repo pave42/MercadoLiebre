@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registra tu usuario</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topHeader">
+        <div class="imagenLogo">
+          <img class="logoPrincipal" src="/images/logo-mercado-liebre.svg" />
+        </div>
+
+        <div class="padreBusqueda">
+          <input
+            class="barraBusqueda"
+            type="text"
+            placeholder="buscar productos, marcas"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+
+        <div class="compra-cuotas">
+          <i class="fas fa-hand-holding-usd"></i>
+          <span>Compra en cuotas y sin tarjeta de credito</span>
+        </div>
+      </div>
+
+      <nav class="lista">
+        <ul class="primerLista">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+
+        <ul class="segundaLista">
+          <li>
+            <a href="register.html">Crea tu cuenta</a
+            ><i class="far fa-id-card"></i>
+          </li>
+          <li>
+            <a href="login.html">Ingresa</a><i class="fas fa-sign-in-alt"></i>
+          </li>
+          <li>
+            <a href="#">Mis Compras</a><i class="fas fa-shopping-basket"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger-menu">
+        <a href="#"><i class="fas fa-bars"></i></a>
+      </div>
+
+      <div class="home-banner">
+        <img src="/images/img-home-banner.jpg" width="100%" />
+      </div>
+    </header>
+
+    <main>
+      <form action="" method="post" class="formulario">
+        <div class="item-formulario">
+          <input
+            type="text"
+            name="nombreApellido"
+            id="nombreApellido"
+            class="formulario-input"
+            placeholder="Nombre y Apellido"
+          />
+        </div>
+        <div class="item-formulario">
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            class="formulario-input"
+            placeholder="Nombre de Usuario"
+          />
+        </div>
+        <div class="item-formulario">
+          <label for="nacimiento">Fecha de Nacimiento: </label>
+          <input
+            type="date"
+            name="nacimiento"
+            id="nacimiento"
+            class="formulario-input"
+          />
+        </div>
+        <div class="item-formulario">
+          <input
+            type="text"
+            name="domicilio"
+            id="domicilio"
+            class="formulario-input"
+            placeholder="Domicilio"
+          />
+        </div>
+        <div class="item-formulario">
+          <label for="perfil">Perfil de Usuario: </label>
+          <input type="radio" name="perfil" value="Comprador" /><label
+            >Comprador</label
+          >
+          <input type="radio" name="perfil" value="Vendedor" /><label
+            >Vendedor</label
+          >
+        </div>
+        <div class="item-formulario">
+          <label>Categorias de Interes: </label>
+          <input type="checkbox" name="interes" value="Electro" /><label
+            >Electro</label
+          >
+          <input type="checkbox" name="interes" value="Moda" /><label
+            >Moda</label
+          >
+          <input type="checkbox" name="interes" value="Hogar" /><label
+            >Hogar</label
+          >
+          <input type="checkbox" name="interes" value="Jugueteria" /><label
+            >Jugueteria</label
+          >
+          <input type="checkbox" name="interes" value="Vida sana" /><label
+            >Vida sana</label
+          >
+        </div>
+        <div class="item-formulario">
+          <label>Foto de Usuario: </label>
+          <input
+            type="file"
+            name="fotoPerfil"
+            accept=".jpg"
+            class="formulario-input"
+          />
+        </div>
+        <div class="item-formulario">
+          <input
+            type="password"
+            name="clave"
+            class="formulario-input"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="item-formulario">
+          <input
+            type="password"
+            name="clave"
+            class="formulario-input"
+            placeholder="Confirmar Contraseña"
+          />
+        </div>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar Datos</button>
+      </form>
+    </main>
+  </body>
+</html>
